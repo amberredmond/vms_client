@@ -8,12 +8,16 @@
     </div>
     <div class = "container">
       <label >username</label>
-      <input type="text" id = "username">
+      <input type="text" id #username>
       <br><br>
       <label>password</label>
-      <input type="text" id = "password">
+      <input type="text" #password>
       <br><br>
-      <button id="submitButton">login</button>
+      <button (click)="auth(username.value,password.value)" id="submitButton">login</button>
+      <br><br>
+      <div class = "container">
+        {{message}}
+      </div>
     </div>
   </div>
 </body>
