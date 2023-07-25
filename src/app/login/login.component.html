@@ -1,0 +1,19 @@
+<div class = "container">
+  <h3>
+    {{welcome}}
+  </h3>
+  
+  <br><br>
+    <label >username</label>
+    <input type="text" id #username>
+    <br><br>
+    <label>password</label>
+    <input type="text" #password>
+    <br><br>
+    <button (click)="auth(username.value,password.value)" id="submitButton">login</button>
+    <br><br>
+    <div class = "container">
+      {{message}}
+    </div>
+  </div>
+  

@@ -1,23 +1,10 @@
 <header>
- <p>Web&#123; &#125;Warriors</p>
-</header>
-<body>
-  <div class="main-div">
-    <div class="container">
-    {{welcome}}
-    </div>
-    <div class = "container">
-      <label >username</label>
-      <input type="text" id #username>
-      <br><br>
-      <label>password</label>
-      <input type="text" #password>
-      <br><br>
-      <button (click)="auth(username.value,password.value)" id="submitButton">login</button>
-      <br><br>
-      <div class = "container">
-        {{message}}
-      </div>
-    </div>
-  </div>
-</body>
+  <p>Web&#123; &#125;Warriors</p>
+ </header>
+ <body>
+   <div class="main-div">
+     <div class="container">
+     <router-outlet></router-outlet>
+     </div>
+   </div>
+ </body>
