@@ -28,6 +28,11 @@ h1 {
 
 }
 
+.inline-button{
+    display: flex;
+    justify-content: space-between;
+}
+
 .main-div{
     display:grid;
     place-content: center;

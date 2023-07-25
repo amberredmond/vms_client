@@ -5,6 +5,8 @@ import { ManageOptionComponent } from './manage-option/manage-option.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { AppComponent } from './app.component';
 import { AppModule } from './app.module';
+import { VolMenuComponent } from './vol-menu/vol-menu.component';
+import { OppMenuComponent } from './opp-menu/opp-menu.component';
 
 const routes: Routes = [
   {
@@ -18,6 +20,14 @@ const routes: Routes = [
   {
     path: 'manage-option',
     component: ManageOptionComponent
+  },
+  {
+    path: 'vol-menu',
+    component: VolMenuComponent
+  },
+  {
+    path: 'opp-menu',
+    component: OppMenuComponent
   },
   {
     path: '**',
